@@ -95,13 +95,17 @@
 <div class="section" id="installing-the-ce-toolchain">
 <h2>Installing the CE Toolchain<a class="headerlink" href="#installing-the-ce-toolchain" title="Permalink to this headline"></a></h2>
 <ul class="simple">
-<li><p>Download the file prefixed with your OS type from <a class="reference external" href="https://github.com/CE-Programming/toolchain/releases/latest">here</a>.</p></li>
-<li><p>Extract the zip archive to a path <strong>without any spaces in it</strong>.</p></li>
+<li><p>Download the latest stable toolchain release for your OS <a class="reference external" href="https://github.com/CE-Programming/toolchain/releases/latest">here</a>.</p>
+<ul>
+<li><p>You can optionally try the “nightly” build <a class="reference external" href="https://github.com/CE-Programming/toolchain/releases/tag/nightly">here</a> instead - this is where all current development happens, and provides the latest features and support before an official release.</p></li>
+</ul>
+</li>
+<li><p>Extract the archive to a location <strong>without any spaces in it</strong>.</p></li>
 </ul>
 <p><strong>On Windows</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Double click <code class="code docutils literal notranslate"><span class="pre">cedev.bat</span></code> inside the extracted folder to launch the toolchain environment.
+<li><p>Double click <code class="code docutils literal notranslate"><span class="pre">cedev.bat</span></code> inside the extracted <code class="code docutils literal notranslate"><span class="pre">CEdev</span></code> folder to launch the toolchain environment.
 You may have to allow the script to be run depending on the user account control.</p></li>
 <li><p>If you want to avoid using the <code class="code docutils literal notranslate"><span class="pre">cedev.bat</span></code> script, you can extend the PATH environment variable to point to the <code class="code docutils literal notranslate"><span class="pre">CEdev/bin</span></code> directory.
 <a class="reference external" href="https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/">Here is an example</a> of how to do this.</p></li>
@@ -112,7 +116,7 @@ You may have to allow the script to be run depending on the user account control
 <div><ul>
 <li><p>Extend the PATH environment variable to point to <code class="code docutils literal notranslate"><span class="pre">CEdev/bin</span></code> by modifying <cite>.bashrc</cite>, <cite>.zshrc</cite>, or whatever flavor your OS uses.</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span>/&lt;insert custom path here&gt;/CEdev/bin:<span class="nv">$PATH</span>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span>/&lt;insert path here&gt;/CEdev/bin:<span class="nv">$PATH</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -148,9 +152,9 @@ This may result in errors such as being unable find/run the <cite>fasmg</cite> p
 It is recommended you whitelist or disable scanning in <code class="code docutils literal notranslate"><span class="pre">CEdev/bin</span></code> to prevent these false positives from occurring.</p>
 </div>
 <p>The <a class="reference external" href="https://ce-programming.github.io/CEmu">CEmu</a> emulator can be used to run the program, or you can transfer it to a real calculator using the cross-platform <a class="reference external" href="https://education.ti.com/en/us/products/computer_software/connectivity-software/ti-connect-ce-software/tabs/overview">TI Connect CE</a>.</p>
-<div class="figure align-center" id="id2">
+<div class="figure align-center" id="id3">
 <img alt="Building the Hello World example" src="../_images/hello_world.png" />
-<p class="caption"><span class="caption-text">Building the Hello World example</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p class="caption"><span class="caption-text">Building the Hello World example</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
 </div>
 <p>Each CE Toolchain project has the following folder structure:</p>
 <ul class="simple">
