@@ -48,6 +48,7 @@
 <li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Using the Toolchain in an IDE</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#clion">CLion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#other-ides">Other IDEs</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="git.html">Using Git For Revision Control</a></li>
@@ -124,20 +125,15 @@ If you opened a demo project, you should be able to hover over the functions to 
 <li><p>Build</p></li>
 </ol>
 <p>Before this step, make sure you added your CEdev <code class="code docutils literal notranslate"><span class="pre">bin</span></code> folder to your system’s PATH, otherwise Make won’t be able to find the right compiler.</p>
-<p>Right click the makefile and click “Run ‘makefile’”</p>
-<img alt="../_images/ides_clion_6.png" class="align-center" src="../_images/ides_clion_6.png" />
-<p>Your project should build and the output will be in the <code class="code docutils literal notranslate"><span class="pre">bin</span></code> directory.</p>
-<p>The makefile is saved as a “run configuration” in the top right for ease of use.</p>
-<img alt="../_images/ides_clion_7.png" class="align-center" src="../_images/ides_clion_7.png" />
-<ol class="arabic simple" start="7">
-<li><p>Add debug configuration</p></li>
-</ol>
-<p>If you want to use the <a class="reference external" href="https://ce-programming.github.io/toolchain/static/debugging.html">CEmu debugging toolchain</a>,
-click the “makefile” run configuration in the top right, then Edit Configuration</p>
-<img alt="../_images/ides_clion_8.png" class="align-center" src="../_images/ides_clion_8.png" />
-<p>Then add <code class="code docutils literal notranslate"><span class="pre">debug</span></code> to the arguments, and rename it to distinguish it from the normal one.</p>
-<img alt="../_images/ides_clion_9.png" class="align-center" src="../_images/ides_clion_9.png" />
-<p>You can now switch between the normal and debug configurations in the top right.</p>
+<p>At the top right, 5 Run Configurations were auto-generated.</p>
+<p>Select “all” for the standard build.</p>
+<p>Select “debug” for a debug build for use with the <a class="reference external" href="https://ce-programming.github.io/toolchain/static/debugging.html">CEmu debugging toolchain</a>.</p>
+<p>only use the Build (the hammer icon) button with these.
+The Run icon tries to run the generated executables, which fails since .8xp files can’t be run natively on PC.</p>
+</div>
+<div class="section" id="other-ides">
+<h2>Other IDEs<a class="headerlink" href="#other-ides" title="Permalink to this headline"></a></h2>
+<p>If you know how to configure the toolchain to work with another IDE, raise an issue or pull request at the <a class="reference external" href="https://github.com/CE-Programming/toolchain">GitHub</a>.</p>
 </div>
 </div>
 
